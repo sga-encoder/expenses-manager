@@ -1,0 +1,23 @@
+<%- include('Templates/header', {titlePage: title, stylesheets: ['dashboard', 'aside'] }) %>
+    <div class="dashboard">
+        <%- include('Templates/aside.ejs') %>
+        <div class="content">
+            <div class="profile">
+                <span class="material-icons">account_circle</span>
+                <p class="user">Sebastian Garzon Arias</p>
+            </div>
+        </div>
+        <div class="expenses">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">gastos</th>
+                        <th scope="col">costo</th>
+                        <th scope="col">cantidad</th>
+                    </tr>
+
+                </thead>
+            </table>
+        </div>
+    </div>
+<%- include('Templates/footer', {scripts: ['aside']}) %>

@@ -1,0 +1,87 @@
+.home {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.home .imgBx,
+.home .imgBx::before,
+.home .imgBx img {
+  width: 100%;
+  height: 100%;
+}
+.home .imgBx::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #0008;
+  z-index: 100;
+}
+.home .imgBx::before img {
+  object-fit: cover;
+}
+.home .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home .content h1 {
+  color: #e0dff9;
+  text-transform: uppercase;
+  font-family: "Poppins";
+  z-index: 100;
+  font-size: 4em;
+}
+.home .content .buttons {
+  z-index: 100;
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.home .content .buttons .btn {
+  padding: 5% 10%;
+  border-radius: 3rem;
+  font-family: "Open sans";
+  font-size: 1em;
+  overflow: hidden;
+  background: #e0dff9;
+  color: #524646;
+  border: 3px solid;
+  position: relative;
+}
+.home .content .buttons .btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+.home .content .buttons .btn:hover::before {
+  transform: translate3d(0, -110%, 0);
+}
+.home .content .buttons .btn.btn-primary {
+  border-color: #47d;
+}
+.home .content .buttons .btn.btn-primary::before {
+  background: #47d;
+}
+.home .content .buttons .btn.btn-secondary {
+  border-color: #d24;
+}
+.home .content .buttons .btn.btn-secondary::before {
+  background: #d24;
+}
+.home .content .buttons .btn span {
+  mix-blend-mode: difference;
+}
+
+/*# sourceMappingURL=index.css.map */
